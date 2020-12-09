@@ -1,8 +1,6 @@
 <h1 align="center">
-<img src="" alt="Logo" height="70">
+<img src="https://raw.githubusercontent.com/CristhianFSantos/Employee_Registration_FullStack/main/img/LogoProject.png" alt="Logo" height="300">
 <br>
-<br>
-<img src="" alt="Gif">
 </h1>
 
 ## 📖 Sobre o projeto
