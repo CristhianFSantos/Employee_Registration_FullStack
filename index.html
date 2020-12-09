@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee registration</title>
+    <link rel="icon" href="./img/icon.png" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="form__header">
+        <img class="header__poster" src="img/hangouts.png" alt="Poster">
+        <h1 class="header__title">Employee registration</h1>
+    </header>
+
+    <main class="content">
+        <form action="insert.php" method="POST">
+            <div class="content__form">
+                <label class="form__label" for="name">Name:</label>
+                <input class="form__input" type="text" id="name" name="name" placeholder="Enter your name...">
+            </div>
+            <div class="content__form">
+                <label class="form__label" for="age">Age:</label>
+                <input class="form__input" type="number" min="1" max="100" id="age" name="age"
+                    placeholder="Enter your age...">
+            </div>
+            <div class="content__form">
+                <label class="form__label" for="profession">Profession:</label>
+                <input class="form__input" type="text" id="profession" name="profession"
+                    placeholder="Enter your profession...">
+            </div>
+            <div class="content__form">
+                <label class="form__label" for="sex">Sex:</label>
+                <div class="sex__radio">
+                    <input class="sex" type="radio" value="woman" name="sex">Woman<br>
+                    <input class="sex" type="radio" value="man" name="sex">Man<br>
+                </div>
+            </div>
+            <div class="content__form content__nationality">
+                <label class="form__label" for="nationality">Nationality:</label>
+                <input class="form__input" type="text" name="nationality" placeholder="Enter your nationality...">
+            </div>
+            <div class="btn">
+                <button class="btn__cancel" type="button" id="btn__cancel">Cancel</button>
+                <input class="btn__confirm" type="submit" value="Confirm">
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
